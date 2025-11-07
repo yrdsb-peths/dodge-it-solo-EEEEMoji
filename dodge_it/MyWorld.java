@@ -10,5 +10,8 @@ public class MyWorld extends World
         
         Bee bee = new Bee();
         addObject(bee, 100, 100);
+        
+        Flower flower  = new Flower();
+        addObject(flower, 600, 100);
     }
 }
