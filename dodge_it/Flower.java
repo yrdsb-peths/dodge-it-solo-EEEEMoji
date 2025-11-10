@@ -8,6 +8,10 @@ public class Flower extends Actor
         if (getX() <= 0){
             resetFlower();
         }
+        
+        if(isTouching(Bee.class)){
+            getWorld().removeObject(this);
+        }
     }
     
     public void resetFlower(){
